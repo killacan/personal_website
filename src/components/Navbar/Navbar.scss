@@ -1,0 +1,11 @@
+@import '../utilities/style.scss';
+
+
+.navbar-container {
+    display: grid;
+    grid-template-columns: 1fr 900px 1fr;
+    grid-template-rows: 1fr;
+    grid-column: 1/4;
+    grid-row: 1;
+    background-color: $background;
+}

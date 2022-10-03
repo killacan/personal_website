@@ -1,0 +1,33 @@
+@import '../utilities/style.scss';
+
+.main-page-container {
+    display: grid;
+    grid-template-columns: 1fr 900px 1fr;
+    grid-template-rows: 400px 1fr;
+    grid-column: 1/4;
+    grid-row: 2;
+    min-height: 100vh;
+    height: auto;
+
+    .about-me-box {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 20% 1fr;
+        grid-column: 2;
+        grid-row: 1;
+        justify-items: center;
+        align-items: center;
+
+        .title-name {
+            grid-column: 2;
+            grid-row: 1;
+            color: $primary-text;
+        }
+
+        .about-me-text {
+            grid-column: 2;
+            grid-row: 2;
+            color: $primary-text;
+        }
+    }
+}
