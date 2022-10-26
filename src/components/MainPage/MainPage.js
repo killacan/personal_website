@@ -1,4 +1,4 @@
-
+import ProfilePic from '../../assets/profile-photo.png';
 
 function MainPage () {
 
@@ -6,6 +6,7 @@ function MainPage () {
     return (
         <div className="main-page-container">
             <div className='about-me-box'>
+                <img className="profile-pic" src={ProfilePic} />
                 <h1 className="title-name">Cameron Sands</h1>
                 <p className="about-me-text">I am a fullstack software developer
                 based out of Austin. Below are my latest projects if you want to
