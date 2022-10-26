@@ -12,7 +12,7 @@
     .about-me-box {
         display: grid;
         grid-template-columns: 40% 60%;
-        grid-template-rows: 20% 1fr;
+        grid-template-rows: 40% 1fr;
         grid-column: 2;
         grid-row: 1;
         justify-items: center;
@@ -22,6 +22,7 @@
             grid-column: 2;
             grid-row: 1;
             color: $primary-text;
+            margin-top: 40%;
         }
 
         .about-me-text {
