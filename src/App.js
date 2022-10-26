@@ -15,6 +15,9 @@ function App() {
       <Navbar />
       <MainPage /> 
       <div className='games-container'>
+        <h2 className='text no-margin'>Projects!</h2>
+        <p className='text medium-margin'>Here are some of the projects I've worked on! 
+        click on them to check them out</p>
         <GameBuddy />
         <Turbine />
         <IndustryIdle />

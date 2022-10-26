@@ -38,7 +38,8 @@ code {
   grid-template-rows: 1fr;
   min-height: 300px;
   width: 100%;
-  // border: 1px solid black;
+  margin-bottom: 20px;
+  border: 1px solid black;
 
   .img-left {
     grid-column: 1;
@@ -60,7 +61,6 @@ code {
     grid-row: 1;
   }
 
-
 }
 
 .text {
@@ -71,4 +71,20 @@ code {
 a {
   text-decoration: none;
   color: $primary-text;
+}
+
+.small-margin {
+  margin: 10px;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.medium-margin {
+  margin: 20px;
+}
+
+.small-margin-bottom {
+  margin-bottom: 10px;
 }

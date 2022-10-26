@@ -9,3 +9,12 @@
     grid-row: 4;
     background-color: $background;
 }
+
+.button {
+    cursor: pointer;
+    background-color: #004182;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+}
