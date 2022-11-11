@@ -20,7 +20,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='px-10 md:px-20 lg:px-40 bg-gray-900'>
+      <main className='sm:px-10 md:px-20 lg:px-40 bg-gray-900'>
         <section className=''>
           <nav className='py-10 mb-12 flex justify-between'>
             <h1 className='text-xl font-burtons'> Cameron's Corner</h1>
@@ -63,7 +63,7 @@ export default function Home() {
             </p>
           </div>
           <div className='grid 2xl:grid-cols-3 lg:grid-cols-2 lg:gap-10'>
-            <div className='text-center shadow-lg border-2 p-10 rounded-xl my-5 hover:bg-slate-900 hover:scale-110 duration-300'>
+            <div className='text-center shadow-lg border-2 p-2 sm:p-10 rounded-xl w-11/12 sm:w-full my-5 mx-auto hover:scale-105 hover:bg-slate-900 sm:hover:scale-110 duration-300'>
               <Image src={GameBuddy} width={200} height={200} className='mx-auto' />
               <h3 className='text-lg font-medium pt-8 pb-2'>Game Buddy</h3>
               <p className='py-2'>
@@ -84,7 +84,7 @@ export default function Home() {
                 <div className='py-2'><a className='bg-blue-600 text-white px-4 py-2 rounded-md mx-4 hover:px-5 hover:py-3 hover:mx-3 duration-300' href='https://gamebuddy-app.herokuapp.com/' target={'_blank'}>Live&nbsp;Project</a></div>
               </div>
             </div>
-            <div className='text-center shadow-lg border-2 p-10 rounded-xl my-5 hover:bg-slate-900 hover:scale-110 duration-300'>
+            <div className='text-center shadow-lg border-2 p-2 sm:p-10 rounded-xl w-11/12 sm:w-full my-5 mx-auto hover:scale-105 hover:bg-slate-900 sm:hover:scale-110 duration-300'>
               <Image src={IdleProduction} width={200} height={200} className='mx-auto' />
               <h3 className='text-lg font-medium pt-8 pb-2'>Idle Production</h3>
               <p className='py-2'>
@@ -102,7 +102,7 @@ export default function Home() {
                 <div className='py-2'><a className='bg-blue-600 text-white px-4 py-2 rounded-md mx-4 hover:px-5 hover:py-3 hover:mx-3 duration-300' href='https://killacan.github.io/IdleProduction//' target={'_blank'}>Live&nbsp;Project</a></div>
               </div>
             </div>
-            <div className='text-center shadow-lg border-2 p-10 rounded-xl my-5 hover:bg-slate-900 hover:scale-110 duration-300'>
+            <div className='text-center shadow-lg border-2 p-2 sm:p-10 rounded-xl w-11/12 sm:w-full my-5 mx-auto hover:scale-105 hover:bg-slate-900 sm:hover:scale-110 duration-300'>
               <Image src={TurbinePromo} width={230} height={200} className='mx-auto' />
               <h3 className='text-lg font-medium pt-8 pb-2'>Turbine</h3>
               <p className='py-2'>
