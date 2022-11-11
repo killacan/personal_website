@@ -130,7 +130,7 @@ export default function Home() {
             <p className='py-2'>Hello! I am Cameron Sands and I am a passionate <span className='text-teal-500'> fullstack software developer</span>.</p>
             <p className='py-2'>I have a <span className='text-teal-500'>passion </span>for creating responsive, feature rich websites.</p>
             <p className='py-2'>I am a tinkerer at heart and <span className='text-teal-500'>love to learn</span> about new things/technologies. I graduated from App Academy </p>
-            <p className='py-2'>If you would like to hire me, reach out on <a className='text-blue-500' target={'_blank'} href="https://www.linkedin.com/in/cameron-sands-a97183169/"> linkedIn</a> or by email at cmsands@tutanota.com.</p>
+            <p className='py-2'>If you would like to get in contact with me, reach out on <a className='text-blue-500' target={'_blank'} href="https://www.linkedin.com/in/cameron-sands-a97183169/"> linkedIn</a> or by email at cmsands@tutanota.com.</p>
           </div>
         </section>
         <nav className='py-10 flex justify-between'>
