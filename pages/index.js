@@ -12,7 +12,6 @@ import TurbinePromo from '../public/Turbine-Promo.png';
 
 
 export default function Home() {
-  // tuna
   return (
     <div>
       <Head>
@@ -47,12 +46,12 @@ export default function Home() {
                 <a href='https://www.linkedin.com/in/cameron-sands-a97183169/' target='_blank'><AiFillLinkedin /></a>
               </div>
             </div>
-            <div>
-              {/* <div className='relative mx-auto mt-20' >
+            {/* <div>
+              <div className='relative mx-auto mt-20' >
                 <Image src={ProfPhoto} className='rounded-full w-80 h-80 mx-auto md:h-96 md:w-96' />
 
-              </div> */}
-            </div>
+              </div>
+            </div> */}
           </div>
         </section>
 
@@ -63,7 +62,7 @@ export default function Home() {
               Here are some of my <span className='text-teal-500'> projects</span>, click on them to check them out.
             </p>
           </div>
-          <div className='grid xl:grid-cols-3 xl:gap-10'>
+          <div className='grid 2xl:grid-cols-3 2xl:gap-10'>
             <div className='text-center shadow-lg border-2 p-10 rounded-xl my-5 hover:bg-slate-900 hover:scale-110 duration-300'>
               <Image src={GameBuddy} width={200} height={200} className='mx-auto' />
               <h3 className='text-lg font-medium pt-8 pb-2'>Game Buddy</h3>
@@ -71,14 +70,15 @@ export default function Home() {
                 Game Buddy is a web application that allows for people
                 to discover new communities of gamers. Our project features
                 a connection to the Riot API for stat verification in League
-                of Legends. It also has a functioning websocket for real time
-                chat communications.
+                of Legends. It also utilizes websocket for real time
+                chat communications and live updates.
               </p>
               <h4 className='py-4 text-teal-600'>Technologies Used</h4>
               <p className='text-gray-300 py-1'>React</p>
               <p className='text-gray-300 py-1'>Express</p>
               <p className='text-gray-300 py-1'>MongoDB</p>
               <p className='text-gray-300 py-1'>Node.js</p>
+              <p className='text-gray-300 py-1'>WebSocket</p>
               <div className='flex justify-center overflow-visible'>
                 <div className='py-2'><a className='bg-blue-600 text-white px-4 py-2 rounded-md mx-4 hover:px-6 hover:py-4 hover:mx-2' href='https://github.com/killacan/gameBuddy' target={'_blank'}>Source Code</a></div>
                 <div className='py-2'><a className='bg-blue-600 text-white px-4 py-2 rounded-md mx-4 hover:px-6 hover:py-4 hover:mx-2' href='https://gamebuddy-app.herokuapp.com/' target={'_blank'}>Live Project</a></div>
@@ -90,7 +90,7 @@ export default function Home() {
               <p className='py-2'>
                 Idle Production is a fun idle game where you can build a massive factory. The game follows a 
                 steady progression of upgraded buildings and increasing amounts of money. The game can be played 
-                for basically ever. Eventually it will have a "win condition" after earning a certain amount. 
+                for basically ever. 
               </p>
               <h4 className='py-4 text-teal-600'>Technologies Used</h4>
               <p className='text-gray-300 py-1'>JavaScript</p>
@@ -128,8 +128,9 @@ export default function Home() {
           <div className='py-4'>
             <h2 className='text-3xl py-1'>About <span className='text-teal-500'>me</span></h2>
             <p className='py-2'>Hello! I am Cameron Sands and I am a passionate <span className='text-teal-500'> fullstack software developer</span>.</p>
-            <p className='py-2'>I have a passion for creating responsive, feature rich websites.</p>
-            <p className='py-2'>If you would like to hire me, reach out on linkedIn or by email at cmsands@tutanota.com.</p>
+            <p className='py-2'>I have a <span className='text-teal-500'>passion </span>for creating responsive, feature rich websites.</p>
+            <p className='py-2'>I am a tinkerer at heart and <span className='text-teal-500'>love to learn</span> about new things/technologies. I graduated from App Academy </p>
+            <p className='py-2'>If you would like to hire me, reach out on <a className='text-blue-500' target={'_blank'} href="https://www.linkedin.com/in/cameron-sands-a97183169/"> linkedIn</a> or by email at cmsands@tutanota.com.</p>
           </div>
         </section>
         <nav className='py-10 flex justify-between'>
