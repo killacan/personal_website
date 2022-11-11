@@ -134,14 +134,14 @@ export default function Home() {
           </div>
         </section>
         <nav className='py-10 flex justify-between'>
-            <h1 className='text-xl'> Find me on LinkedIn or Github</h1>
-            <ul className='flex items-center'>
-              <li><a href='https://github.com/killacan' target='_blank' className='text-4xl'><AiFillGithub className='hover:scale-125 duration-300'/></a></li>
-              <li><a className='bg-gradient-to-r from-blue-800 to-cyan-700 hover:from-cyan-700 hover:to-blue-800 text-white px-4 py-2 rounded-md ml-8' target={'_blank'} href="https://www.linkedin.com/in/cameron-sands-a97183169/">LinkedIn</a></li>
-            </ul>
-          </nav>
-      </main>
+          <h1 className='text-xl'> Find me on LinkedIn or Github</h1>
+          <ul className='flex items-center'>
+            <li><a href='https://github.com/killacan' target='_blank' className='text-4xl'><AiFillGithub className='hover:scale-125 duration-300'/></a></li>
+            <li><a className='bg-gradient-to-r from-blue-800 to-cyan-700 hover:from-cyan-700 hover:to-blue-800 text-white px-4 py-2 rounded-md ml-8' target={'_blank'} href="https://www.linkedin.com/in/cameron-sands-a97183169/">LinkedIn</a></li>
+          </ul>
+        </nav>
 
+      </main>
 
     </div>
   );
