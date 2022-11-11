@@ -22,7 +22,7 @@ export default function Home() {
       </Head>
 
       <main className='px-10 md:px-20 lg:px-40 bg-gray-900'>
-        <section className='min-h-screen'>
+        <section className=''>
           <nav className='py-10 mb-12 flex justify-between'>
             <h1 className='text-xl font-burtons'> Cameron's Corner</h1>
             <ul className='flex items-center'>
@@ -37,8 +37,7 @@ export default function Home() {
                 <h3 className='text-2xl py-2 md:text-3xl'> Developer and Designer</h3>
                 <p className='text-md py-5 leading-8 text-gray-300 md:text-xl max-w-xl mx-auto'>
                   I am a fullstack software developer
-                  based out of Austin. Below are my latest projects if you want to
-                  see what I have been working on. Above and below are links 
+                   and below are my latest projects. Above and below are links 
                   to my Github and LinkedIn
                 </p>
               </div>
@@ -49,10 +48,10 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <div className='relative mx-auto mt-20' >
+              {/* <div className='relative mx-auto mt-20' >
                 <Image src={ProfPhoto} className='rounded-full w-80 h-80 mx-auto md:h-96 md:w-96' />
 
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
@@ -65,7 +64,7 @@ export default function Home() {
             </p>
           </div>
           <div className='grid xl:grid-cols-3 xl:gap-10'>
-            <a className='text-center shadow-lg border-2 p-10 rounded-xl my-5' href='https://gamebuddy-app.herokuapp.com/' target={'_blank'}>
+            <div className='text-center shadow-lg border-2 p-10 rounded-xl my-5' href='https://gamebuddy-app.herokuapp.com/' target={'_blank'}>
               <Image src={GameBuddy} width={200} height={200} className='mx-auto' />
               <h3 className='text-lg font-medium pt-8 pb-2'>Game Buddy</h3>
               <p className='py-2'>
@@ -80,8 +79,11 @@ export default function Home() {
               <p className='text-gray-300 py-1'>Express</p>
               <p className='text-gray-300 py-1'>MongoDB</p>
               <p className='text-gray-300 py-1'>Node.js</p>
-
-            </a>
+              <div className='flex justify-center overflow-visible'>
+                <div className='py-2'><a className='bg-blue-600 text-white px-4 py-2 rounded-md mx-4 hover:px-6 hover:py-4 hover:mx-2' href='https://github.com/killacan/gameBuddy' target={'_blank'}>Source Code</a></div>
+                <div className='py-2'><a className='bg-blue-600 text-white px-4 py-2 rounded-md mx-4 hover:px-6 hover:py-4 hover:mx-2' href='https://gamebuddy-app.herokuapp.com/' target={'_blank'}>Live Project</a></div>
+              </div>
+            </div>
             <a className='text-center shadow-lg border-2 p-10 rounded-xl my-5' href='https://killacan.github.io/IdleProduction/' target={'_blank'}>
               <Image src={IdleProduction} width={200} height={200} className='mx-auto' />
               <h3 className='text-lg font-medium pt-8 pb-2'>Idle Production</h3>
@@ -95,7 +97,10 @@ export default function Home() {
               <p className='text-gray-300 py-1'>Node.js</p>
               <p className='text-gray-300 py-1'>Canvas</p>
               <p className='text-gray-300 py-1'>HTML5</p>
-
+              <div className='flex justify-center overflow-visible'>
+                <div className='py-2'><a className='bg-blue-600 text-white px-4 py-2 rounded-md mx-4 hover:px-6 hover:py-4 hover:mx-2' href='https://github.com/killacan/IdleProduction' target={'_blank'}>Source Code</a></div>
+                <div className='py-2'><a className='bg-blue-600 text-white px-4 py-2 rounded-md mx-4 hover:px-6 hover:py-4 hover:mx-2' href='https://killacan.github.io/IdleProduction//' target={'_blank'}>Live Project</a></div>
+              </div>
             </a>
             <a className='text-center shadow-lg border-2 p-10 rounded-xl my-5' href='https://steam-turbine.herokuapp.com/' target={'_blank'}>
               <Image src={TurbinePromo} width={230} height={200} className='mx-auto' />
@@ -112,7 +117,10 @@ export default function Home() {
               <p className='text-gray-300 py-1'>Ruby on Rails</p>
               <p className='text-gray-300 py-1'>PostgreSQL</p>
               <p className='text-gray-300 py-1'>Node.js</p>
-
+              <div className='flex justify-center overflow-visible'>
+                <div className='py-2'><a className='bg-blue-600 text-white px-4 py-2 rounded-md mx-4 hover:px-6 hover:py-4 hover:mx-2' href='https://github.com/killacan/TurbineFullStack' target={'_blank'}>Source Code</a></div>
+                <div className='py-2'><a className='bg-blue-600 text-white px-4 py-2 rounded-md mx-4 hover:px-6 hover:py-4 hover:mx-2' href='https://steam-turbine.herokuapp.com/' target={'_blank'}>Live Project</a></div>
+              </div>
             </a>
           </div>
         </section>
