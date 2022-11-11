@@ -36,8 +36,8 @@ export default function Home() {
                 <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl'> Cameron Sands</h2>
                 <h3 className='text-2xl py-2 md:text-3xl'> Developer and Designer</h3>
                 <p className='text-md py-5 leading-8 text-gray-300 md:text-xl max-w-xl mx-auto'>
-                  I am a fullstack software developer
-                   and below are my latest projects. Above and below are links 
+                  I am a<span className='text-teal-500'> fullstack software developer </span>
+                  and below are my latest projects. Above and below are links 
                   to my Github and LinkedIn
                 </p>
               </div>
@@ -58,13 +58,13 @@ export default function Home() {
 
         <section>
           <div>
-            <h3 className='text-3xl py-1'> Projects </h3>
+            <h3 className='text-3xl py-1 w-32 hover:scale-110 duration-300 hover:text-teal-500'> Projects </h3>
             <p className='text-md py-2 leading-8 text-gray-300'>
               Here are some of my <span className='text-teal-500'> projects</span>, click on them to check them out.
             </p>
           </div>
           <div className='grid xl:grid-cols-3 xl:gap-10'>
-            <div className='text-center shadow-lg border-2 p-10 rounded-xl my-5' href='https://gamebuddy-app.herokuapp.com/' target={'_blank'}>
+            <div className='text-center shadow-lg border-2 p-10 rounded-xl my-5 hover:bg-slate-900 hover:scale-110 duration-300'>
               <Image src={GameBuddy} width={200} height={200} className='mx-auto' />
               <h3 className='text-lg font-medium pt-8 pb-2'>Game Buddy</h3>
               <p className='py-2'>
@@ -84,7 +84,7 @@ export default function Home() {
                 <div className='py-2'><a className='bg-blue-600 text-white px-4 py-2 rounded-md mx-4 hover:px-6 hover:py-4 hover:mx-2' href='https://gamebuddy-app.herokuapp.com/' target={'_blank'}>Live Project</a></div>
               </div>
             </div>
-            <a className='text-center shadow-lg border-2 p-10 rounded-xl my-5' href='https://killacan.github.io/IdleProduction/' target={'_blank'}>
+            <div className='text-center shadow-lg border-2 p-10 rounded-xl my-5 hover:bg-slate-900 hover:scale-110 duration-300'>
               <Image src={IdleProduction} width={200} height={200} className='mx-auto' />
               <h3 className='text-lg font-medium pt-8 pb-2'>Idle Production</h3>
               <p className='py-2'>
@@ -101,8 +101,8 @@ export default function Home() {
                 <div className='py-2'><a className='bg-blue-600 text-white px-4 py-2 rounded-md mx-4 hover:px-6 hover:py-4 hover:mx-2' href='https://github.com/killacan/IdleProduction' target={'_blank'}>Source Code</a></div>
                 <div className='py-2'><a className='bg-blue-600 text-white px-4 py-2 rounded-md mx-4 hover:px-6 hover:py-4 hover:mx-2' href='https://killacan.github.io/IdleProduction//' target={'_blank'}>Live Project</a></div>
               </div>
-            </a>
-            <a className='text-center shadow-lg border-2 p-10 rounded-xl my-5' href='https://steam-turbine.herokuapp.com/' target={'_blank'}>
+            </div>
+            <div className='text-center shadow-lg border-2 p-10 rounded-xl my-5 hover:bg-slate-900 hover:scale-110 duration-300'>
               <Image src={TurbinePromo} width={230} height={200} className='mx-auto' />
               <h3 className='text-lg font-medium pt-8 pb-2'>Turbine</h3>
               <p className='py-2'>
@@ -121,7 +121,15 @@ export default function Home() {
                 <div className='py-2'><a className='bg-blue-600 text-white px-4 py-2 rounded-md mx-4 hover:px-6 hover:py-4 hover:mx-2' href='https://github.com/killacan/TurbineFullStack' target={'_blank'}>Source Code</a></div>
                 <div className='py-2'><a className='bg-blue-600 text-white px-4 py-2 rounded-md mx-4 hover:px-6 hover:py-4 hover:mx-2' href='https://steam-turbine.herokuapp.com/' target={'_blank'}>Live Project</a></div>
               </div>
-            </a>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div className='py-4'>
+            <h2 className='text-3xl py-1'>About <span className='text-teal-500'>me</span></h2>
+            <p className='py-2'>Hello! I am Cameron Sands and I am a passionate <span className='text-teal-500'> fullstack software developer</span>.</p>
+            <p className='py-2'>I have a passion for creating responsive, feature rich websites.</p>
+            <p className='py-2'>If you would like to hire me, reach out on linkedIn or by email at cmsands@tutanota.com.</p>
           </div>
         </section>
         <nav className='py-10 flex justify-between'>
@@ -131,11 +139,6 @@ export default function Home() {
               <li><a className='bg-gradient-to-r from-blue-800 to-cyan-700 hover:from-cyan-700 hover:to-blue-800 text-white px-4 py-2 rounded-md ml-8' target={'_blank'} href="https://www.linkedin.com/in/cameron-sands-a97183169/">LinkedIn</a></li>
             </ul>
           </nav>
-        <section>
-          <div>
-            <h3></h3>
-          </div>
-        </section>
       </main>
 
 
