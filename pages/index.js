@@ -25,7 +25,7 @@ export default function Home() {
           <nav className='py-10 mb-12 flex justify-between'>
             <h1 className='text-xl font-burtons'> Cameron's Corner</h1>
             <ul className='flex items-center'>
-              <li><a href='https://github.com/killacan' target='_blank' className='text-4xl'><AiFillGithub /></a></li>
+              <li><a href='https://github.com/killacan' target='_blank' className='text-4xl '><AiFillGithub className='hover:scale-125 duration-300'/></a></li>
               <li><a className='bg-gradient-to-r from-blue-800 to-cyan-700 hover:from-cyan-700 hover:to-blue-800 text-white px-4 py-2 rounded-md ml-8' target={'_blank'} href="https://www.linkedin.com/in/cameron-sands-a97183169/">LinkedIn</a></li>
             </ul>
           </nav>
@@ -37,13 +37,13 @@ export default function Home() {
                 <p className='text-md py-5 leading-8 text-gray-300 md:text-xl max-w-xl mx-auto'>
                   I am a<span className='text-teal-500'> fullstack software developer </span>
                   and below are my latest projects. Above and below are links 
-                  to my Github and LinkedIn
+                  to my <a className='text-blue-500' target={'_blank'} href="https://github.com/killacan"> Github</a> and <a className='text-blue-500' target={'_blank'} href="https://www.linkedin.com/in/cameron-sands-a97183169/"> linkedIn</a>.
                 </p>
               </div>
 
               <div className='text-5xl flex justify-center gap-16 py-3 text-gray-200'>
-                <a href='https://github.com/killacan' target='_blank'><AiFillGithub /></a>
-                <a href='https://www.linkedin.com/in/cameron-sands-a97183169/' target='_blank'><AiFillLinkedin /></a>
+                <a href='https://github.com/killacan' target='_blank'><AiFillGithub className='hover:scale-125 duration-300'/></a>
+                <a href='https://www.linkedin.com/in/cameron-sands-a97183169/' target='_blank'><AiFillLinkedin className='hover:scale-125 duration-300'/></a>
               </div>
             </div>
             {/* <div>
@@ -62,7 +62,7 @@ export default function Home() {
               Here are some of my <span className='text-teal-500'> projects</span>, click on them to check them out.
             </p>
           </div>
-          <div className='grid 2xl:grid-cols-3 2xl:gap-10'>
+          <div className='grid 2xl:grid-cols-3 lg:grid-cols-2 lg:gap-10'>
             <div className='text-center shadow-lg border-2 p-10 rounded-xl my-5 hover:bg-slate-900 hover:scale-110 duration-300'>
               <Image src={GameBuddy} width={200} height={200} className='mx-auto' />
               <h3 className='text-lg font-medium pt-8 pb-2'>Game Buddy</h3>
@@ -80,8 +80,8 @@ export default function Home() {
               <p className='text-gray-300 py-1'>Node.js</p>
               <p className='text-gray-300 py-1'>WebSocket</p>
               <div className='flex justify-center overflow-visible'>
-                <div className='py-2'><a className='bg-blue-600 text-white px-4 py-2 rounded-md mx-4 hover:px-6 hover:py-4 hover:mx-2' href='https://github.com/killacan/gameBuddy' target={'_blank'}>Source Code</a></div>
-                <div className='py-2'><a className='bg-blue-600 text-white px-4 py-2 rounded-md mx-4 hover:px-6 hover:py-4 hover:mx-2' href='https://gamebuddy-app.herokuapp.com/' target={'_blank'}>Live Project</a></div>
+                <div className='py-2'><a className='bg-blue-600 text-white px-4 py-2 rounded-md mx-4 hover:px-5 hover:py-3 hover:mx-3 duration-300' href='https://github.com/killacan/gameBuddy' target={'_blank'}>Source&nbsp;Code</a></div>
+                <div className='py-2'><a className='bg-blue-600 text-white px-4 py-2 rounded-md mx-4 hover:px-5 hover:py-3 hover:mx-3 duration-300' href='https://gamebuddy-app.herokuapp.com/' target={'_blank'}>Live&nbsp;Project</a></div>
               </div>
             </div>
             <div className='text-center shadow-lg border-2 p-10 rounded-xl my-5 hover:bg-slate-900 hover:scale-110 duration-300'>
@@ -98,8 +98,8 @@ export default function Home() {
               <p className='text-gray-300 py-1'>Canvas</p>
               <p className='text-gray-300 py-1'>HTML5</p>
               <div className='flex justify-center overflow-visible'>
-                <div className='py-2'><a className='bg-blue-600 text-white px-4 py-2 rounded-md mx-4 hover:px-6 hover:py-4 hover:mx-2' href='https://github.com/killacan/IdleProduction' target={'_blank'}>Source Code</a></div>
-                <div className='py-2'><a className='bg-blue-600 text-white px-4 py-2 rounded-md mx-4 hover:px-6 hover:py-4 hover:mx-2' href='https://killacan.github.io/IdleProduction//' target={'_blank'}>Live Project</a></div>
+                <div className='py-2'><a className='bg-blue-600 text-white px-4 py-2 rounded-md mx-4 hover:px-5 hover:py-3 hover:mx-3 duration-300' href='https://github.com/killacan/IdleProduction' target={'_blank'}>Source&nbsp;Code</a></div>
+                <div className='py-2'><a className='bg-blue-600 text-white px-4 py-2 rounded-md mx-4 hover:px-5 hover:py-3 hover:mx-3 duration-300' href='https://killacan.github.io/IdleProduction//' target={'_blank'}>Live&nbsp;Project</a></div>
               </div>
             </div>
             <div className='text-center shadow-lg border-2 p-10 rounded-xl my-5 hover:bg-slate-900 hover:scale-110 duration-300'>
@@ -118,25 +118,25 @@ export default function Home() {
               <p className='text-gray-300 py-1'>PostgreSQL</p>
               <p className='text-gray-300 py-1'>Node.js</p>
               <div className='flex justify-center overflow-visible'>
-                <div className='py-2'><a className='bg-blue-600 text-white px-4 py-2 rounded-md mx-4 hover:px-6 hover:py-4 hover:mx-2' href='https://github.com/killacan/TurbineFullStack' target={'_blank'}>Source Code</a></div>
-                <div className='py-2'><a className='bg-blue-600 text-white px-4 py-2 rounded-md mx-4 hover:px-6 hover:py-4 hover:mx-2' href='https://steam-turbine.herokuapp.com/' target={'_blank'}>Live Project</a></div>
+                <div className='py-2'><a className='bg-blue-600 text-white px-4 py-2 rounded-md mx-4 hover:px-5 hover:py-3 hover:mx-3 duration-300' href='https://github.com/killacan/TurbineFullStack' target={'_blank'}>Source&nbsp;Code</a></div>
+                <div className='py-2'><a className='bg-blue-600 text-white px-4 py-2 rounded-md mx-4 hover:px-5 hover:py-3 hover:mx-3 duration-300' href='https://steam-turbine.herokuapp.com/' target={'_blank'}>Live&nbsp;Project</a></div>
               </div>
             </div>
           </div>
         </section>
         <section>
           <div className='py-4'>
-            <h2 className='text-3xl py-1'>About <span className='text-teal-500'>me</span></h2>
+            <h2 className='text-3xl py-1 w-40 group hover:scale-110 duration-300 hover:text-teal-500'>About <span className='text-teal-500 group-hover:text-white duration-300'>me</span></h2>
             <p className='py-2'>Hello! I am Cameron Sands and I am a passionate <span className='text-teal-500'> fullstack software developer</span>.</p>
             <p className='py-2'>I have a <span className='text-teal-500'>passion </span>for creating responsive, feature rich websites.</p>
-            <p className='py-2'>I am a tinkerer at heart and <span className='text-teal-500'>love to learn</span> about new things/technologies. I graduated from App Academy </p>
+            <p className='py-2'>I am a tinkerer at heart and <span className='text-teal-500'>love to learn</span> about new things/technologies. I graduated from App Academy and have completed 3 projects. </p>
             <p className='py-2'>If you would like to get in contact with me, reach out on <a className='text-blue-500' target={'_blank'} href="https://www.linkedin.com/in/cameron-sands-a97183169/"> linkedIn</a> or by email at cmsands@tutanota.com.</p>
           </div>
         </section>
         <nav className='py-10 flex justify-between'>
             <h1 className='text-xl'> Find me on LinkedIn or Github</h1>
             <ul className='flex items-center'>
-              <li><a href='https://github.com/killacan' target='_blank' className='text-4xl'><AiFillGithub /></a></li>
+              <li><a href='https://github.com/killacan' target='_blank' className='text-4xl'><AiFillGithub className='hover:scale-125 duration-300'/></a></li>
               <li><a className='bg-gradient-to-r from-blue-800 to-cyan-700 hover:from-cyan-700 hover:to-blue-800 text-white px-4 py-2 rounded-md ml-8' target={'_blank'} href="https://www.linkedin.com/in/cameron-sands-a97183169/">LinkedIn</a></li>
             </ul>
           </nav>
