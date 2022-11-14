@@ -1,11 +1,23 @@
 import Head from 'next/head'
-import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {
   AiFillLinkedin, 
   AiFillGithub,
+  AiFillHtml5,
 } from "react-icons/ai";
+import {
+  SiRubyonrails,
+  SiJavascript,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiCss3,
+  SiNodedotjs,
+  SiRedux,
+  SiMongodb
+} from "react-icons/si";
+import {
+  FaReact,
+} from "react-icons/fa"
 import Image from 'next/image';
-import ProfPhoto from '../public/profile-photo.png';
 import GameBuddy from '../public/GameBuddy-Landing.png';
 import IdleProduction from '../public/Idle-Production-Promo.png';
 import TurbinePromo from '../public/Turbine-Promo.png';
@@ -58,7 +70,7 @@ export default function Home() {
         <section>
           <div>
             <h3 className='text-3xl py-1 w-32 hover:scale-110 duration-300 hover:text-teal-500'> Projects </h3>
-            <p className='text-md py-2 leading-8 text-gray-300'>
+            <p className='text-md py-2 leading-8 text-gray-300 pb-4'>
               Here are some of my <span className='text-teal-500'> projects</span>, click on them to check them out.
             </p>
           </div>
@@ -125,12 +137,29 @@ export default function Home() {
           </div>
         </section>
         <section>
-          <div className='py-4'>
-            <h2 className='text-3xl py-1 w-40 group hover:scale-110 duration-300 hover:text-teal-500'>About <span className='text-teal-500 group-hover:text-white duration-300'>me</span></h2>
-            <p className='py-2'>Hello! I am Cameron Sands and I am a passionate <span className='text-teal-500'> fullstack software developer</span>.</p>
-            <p className='py-2'>I have a <span className='text-teal-500'>passion </span>for creating responsive, feature rich websites.</p>
-            <p className='py-2'>I am a tinkerer at heart and <span className='text-teal-500'>love to learn</span> about new things/technologies. I graduated from App Academy and have completed 3 projects. </p>
-            <p className='py-2'>If you would like to get in contact with me, reach out on <a className='text-blue-500' target={'_blank'} href="https://www.linkedin.com/in/cameron-sands-a97183169/"> linkedIn</a> or by email at cmsands@tutanota.com.</p>
+          <div className='flex flex-row'>
+            <div className='py-4'>
+              <h2 className='text-3xl py-1 w-40 group hover:scale-110 duration-300 hover:text-teal-500'>About <span className='text-teal-500 group-hover:text-white duration-300'>me</span></h2>
+              <p className='py-2'>Hello! I am Cameron Sands and I am a passionate <span className='text-teal-500'> fullstack software developer</span>.</p>
+              <p className='py-2'>I have a <span className='text-teal-500'>passion </span>for creating responsive, feature rich websites.</p>
+              <p className='py-2'>I am a tinkerer at heart and <span className='text-teal-500'>love to learn</span> about new things/technologies. I graduated from <span className='text-teal-500'>App Academy</span> and have completed 3 projects. </p>
+              <p className='py-2'>If you would like to get in contact with me, reach out on <a className='text-blue-500' target={'_blank'} href="https://www.linkedin.com/in/cameron-sands-a97183169/"> linkedIn</a> or by email at cmsands@tutanota.com.</p>
+            </div>
+            <div className='flex flex-col justify-center w-1/2'>
+              <h2 className='text-3xl flex justify-center pb-10'>Tech Stack</h2>
+              <ul className='grid grid-cols-3 gap-10 justify-center'>
+                <li className='flex justify-center'><SiRubyonrails className='hover:scale-125 duration-300 text-4xl' /></li>
+                <li className='flex justify-center'><SiJavascript className='hover:scale-125 duration-300 text-4xl' /></li>
+                <li className='flex justify-center'><FaReact className='hover:scale-125 duration-300 text-4xl text-teal-500' /></li>
+                <li className='flex justify-center'><SiNextdotjs className='hover:scale-125 duration-300 text-4xl' /></li>
+                <li className='flex justify-center'><SiTailwindcss className='hover:scale-125 duration-300 text-4xl text-teal-500' /></li>
+                <li className='flex justify-center'><AiFillHtml5 className='hover:scale-125 duration-300 text-4xl'/></li>
+                <li className='flex justify-center'><SiCss3 className='hover:scale-125 duration-300 text-4xl text-teal-500'/></li>
+                <li className='flex justify-center'><SiNodedotjs className='hover:scale-125 duration-300 text-4xl'/></li>
+                <li className='flex justify-center'><SiRedux className='hover:scale-125 duration-300 text-4xl'/></li>
+                <li className='flex justify-center'><SiMongodb className='hover:scale-125 duration-300 text-4xl'/></li>
+              </ul>
+            </div>
           </div>
         </section>
         <nav className='py-10 flex justify-between'>
