@@ -147,7 +147,7 @@ export default function Home() {
               <p className='py-2'>If you would like to get in contact with me, reach out on <a className='text-blue-500' target={'_blank'} href="https://www.linkedin.com/in/cameron-sands-a97183169/"> linkedIn</a> or by email at cmsands@tutanota.com.</p>
             </div>
             <div className='flex flex-col justify-center w-1/2'>
-              <h2 className='text-3xl flex justify-center pb-10'>Tech Stack</h2>
+              <h2 className='text-3xl flex justify-center pb-10 text-teal-500'>Tech Stack</h2>
               <ul className='grid grid-cols-3 gap-10 justify-center'>
                 <li className='flex justify-center'><SiRubyonrails className='hover:scale-125 duration-300 text-4xl text-red-700' /></li>
                 <li className='flex justify-center'><SiJavascript className='hover:scale-125 duration-300 text-4xl text-yellow-500' /></li>
