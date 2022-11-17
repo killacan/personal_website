@@ -142,6 +142,8 @@ export default function Home() {
               <p className='py-2'>Hello! I am Cameron Sands and I am a passionate <span className='text-teal-500'> fullstack software developer</span>.</p>
               <p className='py-2'>I have a <span className='text-teal-500'>passion </span>for creating responsive, feature rich websites.</p>
               <p className='py-2'>I am a tinkerer at heart and <span className='text-teal-500'>love to learn</span> about new things/technologies. I graduated from <span className='text-teal-500'>App Academy</span> and have completed 3 projects. </p>
+              <p className='py-2'>I also have prior experience with teaching, Linux, and game development</p>
+              <p className='py-2'>A few of my hobbies include Photography, Cybersecurity, ai art generation, and playing the Ukulele.</p>
               <p className='py-2'>If you would like to get in contact with me, reach out on <a className='text-blue-500' target={'_blank'} href="https://www.linkedin.com/in/cameron-sands-a97183169/"> linkedIn</a> or by email at cmsands@tutanota.com.</p>
             </div>
             <div className='flex flex-col justify-center w-1/2'>
