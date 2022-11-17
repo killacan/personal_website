@@ -22,7 +22,6 @@ import GameBuddy from '../public/GameBuddy-Landing.png';
 import IdleProduction from '../public/Idle-Production-Promo.png';
 import TurbinePromo from '../public/Turbine-Promo.png';
 
-
 export default function Home() {
   return (
     <div>
@@ -148,16 +147,16 @@ export default function Home() {
             <div className='flex flex-col justify-center w-1/2'>
               <h2 className='text-3xl flex justify-center pb-10'>Tech Stack</h2>
               <ul className='grid grid-cols-3 gap-10 justify-center'>
-                <li className='flex justify-center'><SiRubyonrails className='hover:scale-125 duration-300 text-4xl' /></li>
-                <li className='flex justify-center'><SiJavascript className='hover:scale-125 duration-300 text-4xl' /></li>
+                <li className='flex justify-center'><SiRubyonrails className='hover:scale-125 duration-300 text-4xl text-red-700' /></li>
+                <li className='flex justify-center'><SiJavascript className='hover:scale-125 duration-300 text-4xl text-yellow-500' /></li>
                 <li className='flex justify-center'><FaReact className='hover:scale-125 duration-300 text-4xl text-teal-500' /></li>
                 <li className='flex justify-center'><SiNextdotjs className='hover:scale-125 duration-300 text-4xl' /></li>
                 <li className='flex justify-center'><SiTailwindcss className='hover:scale-125 duration-300 text-4xl text-teal-500' /></li>
-                <li className='flex justify-center'><AiFillHtml5 className='hover:scale-125 duration-300 text-4xl'/></li>
-                <li className='flex justify-center'><SiCss3 className='hover:scale-125 duration-300 text-4xl text-teal-500'/></li>
-                <li className='flex justify-center'><SiNodedotjs className='hover:scale-125 duration-300 text-4xl'/></li>
-                <li className='flex justify-center'><SiRedux className='hover:scale-125 duration-300 text-4xl'/></li>
-                <li className='flex justify-center'><SiMongodb className='hover:scale-125 duration-300 text-4xl'/></li>
+                <li className='flex justify-center'><AiFillHtml5 className='hover:scale-125 duration-300 text-4xl text-orange-600'/></li>
+                <li className='flex justify-center'><SiCss3 className='hover:scale-125 duration-300 text-4xl text-blue-500'/></li>
+                <li className='flex justify-center'><SiNodedotjs className='hover:scale-125 duration-300 text-4xl text-green-700'/></li>
+                <li className='flex justify-center'><SiRedux className='hover:scale-125 duration-300 text-4xl text-indigo-700'/></li>
+                <li className='flex justify-center'><SiMongodb className='hover:scale-125 duration-300 text-4xl text-green-600'/></li>
               </ul>
             </div>
           </div>
