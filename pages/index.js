@@ -136,7 +136,7 @@ export default function Home() {
           </div>
         </section>
         <section>
-          <div className='flex flex-row'>
+          <div className='lg:flex lg:flex-row'>
             <div className='py-4'>
               <h2 className='text-3xl py-1 w-40 group hover:scale-110 duration-300 hover:text-teal-500'>About <span className='text-teal-500 group-hover:text-white duration-300'>me</span></h2>
               <p className='py-2'>Hello! I am Cameron Sands and I am a passionate <span className='text-teal-500'> fullstack software developer</span>.</p>
@@ -146,7 +146,7 @@ export default function Home() {
               <p className='py-2'>A few of my hobbies include Photography, Cybersecurity, ai art generation, and playing the Ukulele.</p>
               <p className='py-2'>If you would like to get in contact with me, reach out on <a className='text-blue-500' target={'_blank'} href="https://www.linkedin.com/in/cameron-sands-a97183169/"> linkedIn</a> or by email at cmsands@tutanota.com.</p>
             </div>
-            <div className='flex flex-col justify-center w-1/2'>
+            <div className='flex flex-col justify-center lg:w-1/2'>
               <h2 className='text-4xl flex justify-center pb-10 pt-4 text-teal-500'>Tech Stack</h2>
               <ul className='grid grid-cols-3 gap-10 justify-center'>
                 <li className='flex justify-center'><SiRubyonrails className='hover:scale-125 duration-300 text-4xl text-red-700' /></li>
