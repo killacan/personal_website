@@ -85,11 +85,13 @@ export default function Home() {
                 chat communications and live updates.
               </p>
               <h4 className='py-4 text-teal-600'>Technologies Used</h4>
-              <p className='text-gray-300 py-1'>React</p>
-              <p className='text-gray-300 py-1'>Express</p>
-              <p className='text-gray-300 py-1'>MongoDB</p>
-              <p className='text-gray-300 py-1'>Node.js</p>
-              <p className='text-gray-300 py-1'>WebSocket</p>
+              <div className='grid grid-cols-2'>
+                <p className='text-gray-300 p-1'>React</p>
+                <p className='text-gray-300 p-1'>Express</p>
+                <p className='text-gray-300 p-1'>MongoDB</p>
+                <p className='text-gray-300 p-1'>Node.js</p>
+                <p className='text-gray-300 p-1'>WebSocket</p>
+              </div>
               <div className='flex justify-center overflow-visible'>
                 <div className='py-2'><a className='bg-blue-600 text-white px-4 py-2 rounded-md mx-4 hover:px-5 hover:py-3 hover:mx-3 duration-300' href='https://github.com/killacan/gameBuddy' target={'_blank'}>Source&nbsp;Code</a></div>
                 <div className='py-2'><a className='bg-blue-600 text-white px-4 py-2 rounded-md mx-4 hover:px-5 hover:py-3 hover:mx-3 duration-300' href='https://gamebuddy-app.herokuapp.com/' target={'_blank'}>Live&nbsp;Project</a></div>
@@ -104,10 +106,12 @@ export default function Home() {
                 for basically ever. 
               </p>
               <h4 className='py-4 text-teal-600'>Technologies Used</h4>
-              <p className='text-gray-300 py-1'>JavaScript</p>
-              <p className='text-gray-300 py-1'>Node.js</p>
-              <p className='text-gray-300 py-1'>Canvas</p>
-              <p className='text-gray-300 py-1'>HTML5</p>
+              <div className='grid grid-cols-2'>
+                <p className='text-gray-300 py-1'>JavaScript</p>
+                <p className='text-gray-300 py-1'>Node.js</p>
+                <p className='text-gray-300 py-1'>Canvas</p>
+                <p className='text-gray-300 py-1'>HTML5</p>
+              </div>
               <div className='flex justify-center overflow-visible'>
                 <div className='py-2'><a className='bg-blue-600 text-white px-4 py-2 rounded-md mx-4 hover:px-5 hover:py-3 hover:mx-3 duration-300' href='https://github.com/killacan/IdleProduction' target={'_blank'}>Source&nbsp;Code</a></div>
                 <div className='py-2'><a className='bg-blue-600 text-white px-4 py-2 rounded-md mx-4 hover:px-5 hover:py-3 hover:mx-3 duration-300' href='https://killacan.github.io/IdleProduction//' target={'_blank'}>Live&nbsp;Project</a></div>
@@ -122,12 +126,14 @@ export default function Home() {
                 images to reduce server load. 
               </p>
               <h4 className='py-4 text-teal-600'>Technologies Used</h4>
-              <p className='text-gray-300 py-1'>React</p>
-              <p className='text-gray-300 py-1'>JavaScript</p>
-              <p className='text-gray-300 py-1'>Redux</p>
-              <p className='text-gray-300 py-1'>Ruby on Rails</p>
-              <p className='text-gray-300 py-1'>PostgreSQL</p>
-              <p className='text-gray-300 py-1'>Node.js</p>
+              <div className='grid grid-cols-2'>
+                <p className='text-gray-300 py-1'>React</p>
+                <p className='text-gray-300 py-1'>JavaScript</p>
+                <p className='text-gray-300 py-1'>Redux</p>
+                <p className='text-gray-300 py-1'>Ruby on Rails</p>
+                <p className='text-gray-300 py-1'>PostgreSQL</p>
+                <p className='text-gray-300 py-1'>Node.js</p>
+              </div>
               <div className='flex justify-center overflow-visible'>
                 <div className='py-2'><a className='bg-blue-600 text-white px-4 py-2 rounded-md mx-4 hover:px-5 hover:py-3 hover:mx-3 duration-300' href='https://github.com/killacan/TurbineFullStack' target={'_blank'}>Source&nbsp;Code</a></div>
                 <div className='py-2'><a className='bg-blue-600 text-white px-4 py-2 rounded-md mx-4 hover:px-5 hover:py-3 hover:mx-3 duration-300' href='https://steam-turbine.herokuapp.com/' target={'_blank'}>Live&nbsp;Project</a></div>
@@ -149,22 +155,22 @@ export default function Home() {
             <div className='flex flex-col justify-center lg:w-1/2'>
               <h2 className='text-4xl flex justify-center pb-10 pt-4 text-teal-500'>Tech Stack</h2>
               <ul className='grid grid-cols-3 gap-10 justify-center'>
-                <li className='flex justify-center'><SiRubyonrails className='hover:scale-125 duration-300 text-4xl text-red-700' /></li>
-                <li className='flex justify-center'><SiJavascript className='hover:scale-125 duration-300 text-4xl text-yellow-500' /></li>
-                <li className='flex justify-center'><FaReact className='hover:scale-125 duration-300 text-4xl text-teal-500' /></li>
-                <li className='flex justify-center'><SiNextdotjs className='hover:scale-125 duration-300 text-4xl' /></li>
-                <li className='flex justify-center'><SiTailwindcss className='hover:scale-125 duration-300 text-4xl text-teal-500' /></li>
-                <li className='flex justify-center'><AiFillHtml5 className='hover:scale-125 duration-300 text-4xl text-orange-600'/></li>
-                <li className='flex justify-center'><SiCss3 className='hover:scale-125 duration-300 text-4xl text-blue-500'/></li>
-                <li className='flex justify-center'><SiNodedotjs className='hover:scale-125 duration-300 text-4xl text-green-700'/></li>
-                <li className='flex justify-center'><SiRedux className='hover:scale-125 duration-300 text-4xl text-indigo-700'/></li>
-                <li className='flex justify-center'><SiMongodb className='hover:scale-125 duration-300 text-4xl text-green-600'/></li>
+                <li className='flex justify-center flex-col'><SiRubyonrails className='hover:scale-125 mx-auto duration-300 text-4xl text-red-700' /><p className='flex justify-center'>Ruby on Rails</p></li>
+                <li className='flex justify-center flex-col'><SiJavascript className='hover:scale-125 duration-300 mx-auto text-4xl text-yellow-500' /><p className='flex justify-center'>JavaScript</p></li>
+                <li className='flex justify-center flex-col'><FaReact className='hover:scale-125 duration-300 mx-auto text-4xl text-teal-500' /><p className='flex justify-center'>React</p></li>
+                <li className='flex justify-center flex-col'><SiNextdotjs className='hover:scale-125 duration-300 mx-auto text-4xl' /><p className='flex justify-center'>NextJS</p></li>
+                <li className='flex justify-center flex-col'><SiTailwindcss className='hover:scale-125 duration-300 mx-auto text-4xl text-teal-500' /><p className='flex justify-center'>TailwindCSS</p></li>
+                <li className='flex justify-center flex-col'><AiFillHtml5 className='hover:scale-125 duration-300 mx-auto text-4xl text-orange-600'/><p className='flex justify-center'>HTML5</p></li>
+                <li className='flex justify-center flex-col'><SiCss3 className='hover:scale-125 duration-300 mx-auto text-4xl text-blue-500'/><p className='flex justify-center'>CSS3</p></li>
+                <li className='flex justify-center flex-col'><SiNodedotjs className='hover:scale-125 duration-300 mx-auto text-4xl text-green-700'/><p className='flex justify-center'>NodeJS</p></li>
+                <li className='flex justify-center flex-col'><SiRedux className='hover:scale-125 duration-300 mx-auto text-4xl text-indigo-700'/><p className='flex justify-center'>Redux</p></li>
+                <li className='flex justify-center flex-col'><SiMongodb className='hover:scale-125 duration-300 mx-auto text-4xl text-green-600'/><p className='flex justify-center'>MongoDB</p></li>
               </ul>
             </div>
           </div>
         </section>
         <nav className='py-10 flex justify-between'>
-          <h1 className='text-xl'> Find me on LinkedIn or Github</h1>
+          <h1 className='text-3xl'> Find me on LinkedIn or Github</h1>
           <ul className='flex items-center'>
             <li><a href='https://github.com/killacan' target='_blank' className='text-4xl'><AiFillGithub className='hover:scale-125 duration-300'/></a></li>
             <li><a className='bg-gradient-to-r from-blue-800 to-cyan-700 hover:from-cyan-700 hover:to-blue-800 text-white px-4 py-2 rounded-md ml-8' target={'_blank'} href="https://www.linkedin.com/in/cameron-sands-a97183169/">LinkedIn</a></li>
