@@ -20,9 +20,9 @@ import {
 import Link from 'next/link';
 import Image from 'next/image';
 import GameBuddy from '../public/GameBuddy-Landing.png';
-import IdleProduction from '../public/Idle-Production-Promo.png';
+import IdleProduction from '../public/Idle-Production-Promo-gif.gif';
 import TurbinePromo from '../public/Turbine-Promo.png';
-import Myresume from '../public/resume.pdf';
+// import Myresume from '../public/resume.pdf';
 
 export default function Home() {
   return (
@@ -41,7 +41,7 @@ export default function Home() {
               <li><a href='https://github.com/killacan' target='_blank' className='text-4xl '><AiFillGithub className='hover:scale-125 duration-300'/></a></li>
               <li><a className='bg-gradient-to-r from-blue-800 to-cyan-700 hover:from-cyan-700 hover:to-blue-800 text-white px-4 py-2 rounded-md ml-8' target={'_blank'} href="https://www.linkedin.com/in/cameron-sands-a97183169/">LinkedIn</a></li>
               {/* <li><Link className='bg-gradient-to-r from-blue-800 to-cyan-700 hover:from-cyan-700 hover:to-blue-800 text-white px-4 py-2 rounded-md ml-8' href='/resume' >Resume</Link></li> */}
-              <li><a className='bg-gradient-to-r from-blue-800 to-cyan-700 hover:from-cyan-700 hover:to-blue-800 text-white px-4 py-2 rounded-md ml-8' href={resume} target='_blank' >Resume</a></li>
+              {/* <li><a className='bg-gradient-to-r from-blue-800 to-cyan-700 hover:from-cyan-700 hover:to-blue-800 text-white px-4 py-2 rounded-md ml-8' href={resume} target='_blank' >Resume</a></li> */}
             </ul>
           </nav>
           <div className='xl:flex xl:flex-row-reverse justify-center'>
