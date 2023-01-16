@@ -49,7 +49,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='grid main sm:px-10 md:px-20 lg:px-40 bg-[#00043f]'>
+      <main className='grid main sm:px-10 md:px-20 lg:px-40 bg-[#020530]'>
         <section className='z-10'>
           <nav className='py-10 mb-12 flex justify-between'>
             <h1 className='text-xl font-burtons'> Cameron's Corner</h1>
@@ -61,7 +61,7 @@ export default function Home() {
             </ul>
           </nav>
           <div className='xl:flex xl:flex-row-reverse justify-center'>
-            <div>
+            <div className='bg-black/30'>
               <div className='text-center p-10'>
                 <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl'> Cameron Sands</h2>
                 <h3 className='text-2xl py-2 md:text-3xl'> Developer and Designer</h3>
@@ -94,7 +94,7 @@ export default function Home() {
             </p>
           </div>
           <div className='grid 2xl:grid-cols-3 lg:grid-cols-2 lg:gap-10'>
-            <div className='text-center shadow-lg border-2 p-2 sm:p-10 rounded-xl w-11/12 sm:w-full my-5 mx-auto hover:scale-105 hover:bg-slate-900 sm:hover:scale-110 duration-300'>
+            <div className='gbox'>
               <Image src={GameBuddy} width={200} height={200} className='mx-auto' />
               <h3 className='text-lg font-medium pt-8 pb-2'>Game Buddy</h3>
               <p className='py-2'>
@@ -117,7 +117,7 @@ export default function Home() {
                 <div className='py-2'><a className='bg-blue-600 text-white px-4 py-2 rounded-md mx-4 hover:px-5 hover:py-3 hover:mx-3 duration-300' href='https://gamebuddy-app.herokuapp.com/' target={'_blank'}>Live&nbsp;Project</a></div>
               </div>
             </div>
-            <div className='text-center shadow-lg border-2 p-2 sm:p-10 rounded-xl w-11/12 sm:w-full my-5 mx-auto hover:scale-105 hover:bg-slate-900 sm:hover:scale-110 duration-300'>
+            <div className='gbox'>
               <Image src={IdleProduction} width={200} height={200} className='mx-auto' />
               <h3 className='text-lg font-medium pt-8 pb-2'>Idle Production</h3>
               <p className='py-2'>
@@ -137,7 +137,7 @@ export default function Home() {
                 <div className='py-2'><a className='bg-blue-600 text-white px-4 py-2 rounded-md mx-4 hover:px-5 hover:py-3 hover:mx-3 duration-300' href='https://killacan.github.io/IdleProduction//' target={'_blank'}>Live&nbsp;Project</a></div>
               </div>
             </div>
-            <div className='text-center shadow-lg border-2 p-2 sm:p-10 rounded-xl w-11/12 sm:w-full my-5 mx-auto hover:scale-105 hover:bg-slate-900 sm:hover:scale-110 duration-300'>
+            <div className='gbox'>
               <Image src={TurbinePromo} width={230} height={200} className='mx-auto' />
               <h3 className='text-lg font-medium pt-8 pb-2'>Turbine</h3>
               <p className='py-2'>
@@ -165,12 +165,15 @@ export default function Home() {
           <div className='lg:flex lg:flex-row'>
             <div className='py-4'>
               <h2 className='text-3xl py-1 w-40 group hover:scale-110 duration-300 hover:text-teal-500'>About <span className='text-teal-500 group-hover:text-white duration-300'>me</span></h2>
-              <p className='py-2'>Hello! I am Cameron Sands and I am a passionate <span className='text-teal-500'> fullstack software developer</span>.</p>
-              <p className='py-2'><span className='text-teal-500'>Passionate </span>for creating responsive, feature rich websites.</p>
-              <p className='py-2'>Tinkerer at heart and <span className='text-teal-500'>love to learn</span> about new things/technologies. I graduated from <span className='text-teal-500'>App Academy</span> and have completed 3 projects. </p>
-              <p className='py-2'>I also have prior experience with teaching, Linux, and game development</p>
-              <p className='py-2'>A few of my hobbies include Photography, Cybersecurity, ai art generation, and playing the Ukulele.</p>
-              <p className='py-2'>If you would like to get in contact with me, reach out on <a className='text-blue-500' target={'_blank'} href="https://www.linkedin.com/in/cameron-sands-a97183169/"> linkedIn</a> or by email at cmsands@tutanota.com.</p>
+              <p className='py-2'>I am Cameron Sands and I am a passionate <span className='text-teal-500'> fullstack software developer</span>.</p>
+              <p className='py-2'>As a full stack developer, I have a strong passion for building innovative and dynamic web applications. With a solid foundation in React, Rails, JavaScript, Ruby, and Redux. I am able to create responsive and interactive user interfaces that provide a seamless experience.</p>
+              <p className='py-2'>I have experience working on several projects, including: Game Buddy, an online social platform that facilitates the creation of gaming communities and communication through chat, LlamaChop-Bot, a chatbot that is able to manage Twitch Chat with neural network capabilities, Turbine, a faithful re-representation of Steam utilizing AWS for image hosting and reviews, and Idle Production, an idle game with complex resource management and responsive gameplay. </p>
+              <p className='py-2'>Through my projects I have a proven track record of delivering projects, utilizing my skills in HTML5, CSS3, JavaScript, and Ruby on Rails. I am also a great team player and have experience working in a team environment.</p>
+              <p className='py-2'>I am a graduate of App Academy, where I completed a Curriculum of Study in Web Development (Ruby on Rails, JavaScript, React, and Express) and I hold a Bachelor of Arts in Political Science from San Jose State University. I have a strong passion for game development and participated in the Game Dev club and created a game in Unity with C#.</p>
+              <p className='py-2'>When I'm not working on web development projects, I enjoy pursuing a variety of hobbies. I am an avid Ukulele player and enjoy playing music as a way to relax and unwind. I also enjoy power lifting and have been working on building my strength and fitness.</p>
+              <p className='py-2'>I am a big fan of gaming and have been playing games for as long as I can remember. I also enjoy streaming my gameplay on platforms like Twitch, and making YouTube videos about my gaming experiences. I am always looking for new games to play and new ways to engage with the gaming community.</p>
+              <p className='py-2'>Overall, my hobbies and interests complement my professional skills and help me stay creative and engaged in my work. I am always looking for new ways to improve my skills and grow as a developer, and I believe that my hobbies are an important part of that journey.</p>
+              <p className='py-2'></p>
             </div>
             <div className='flex flex-col justify-center lg:w-1/2'>
               <h2 className='text-4xl flex justify-center pb-10 pt-4 text-teal-500'>Tech Stack</h2>
@@ -189,13 +192,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <nav className='py-10 flex justify-between'>
-          <h1 className='text-3xl'> Find me on LinkedIn or Github</h1>
-          <ul className='flex items-center'>
-            <li><a href='https://github.com/killacan' target='_blank' className='text-4xl'><AiFillGithub className='hover:scale-125 duration-300'/></a></li>
-            <li><a className='bg-gradient-to-r from-blue-800 to-cyan-700 hover:from-cyan-700 hover:to-blue-800 text-white px-4 py-2 rounded-md ml-8' target={'_blank'} href="https://www.linkedin.com/in/cameron-sands-a97183169/">LinkedIn</a></li>
-          </ul>
-        </nav>
+
         <Particles
             id="tsparticles"
             init={particlesInit}
@@ -279,6 +276,15 @@ export default function Home() {
             }}
         />
       </main>
+      <section className='sm:px-10 md:px-20 lg:px-40'>
+        <nav className='py-10 flex justify-between'>
+          <h1 className='text-3xl'> Find me on <a className='text-blue-500' href='https://www.linkedin.com/in/cameron-sands-a97183169/' target='_blank'>LinkedIn</a> or <a className='text-blue-500' href='https://github.com/killacan' target='_blank'>Github</a></h1>
+          <ul className='flex items-center'>
+            <li><a href='https://github.com/killacan' target='_blank' className='text-4xl'><AiFillGithub className='hover:scale-125 duration-300'/></a></li>
+            <li><a className='bg-gradient-to-r from-blue-800 to-cyan-700 hover:from-cyan-700 hover:to-blue-800 text-white px-4 py-2 rounded-md ml-8' target={'_blank'} href="https://www.linkedin.com/in/cameron-sands-a97183169/">LinkedIn</a></li>
+          </ul>
+        </nav>
+      </section>
 
     </div>
   );

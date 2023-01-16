@@ -19,6 +19,12 @@ a {
   box-sizing: border-box;
 }
 
+@layer components {
+  .gbox {
+    @apply flex justify-around flex-col text-center shadow-lg border-2 p-2 sm:p-10 rounded-xl w-11/12 sm:w-full my-5 mx-auto hover:scale-105 hover:bg-slate-900 sm:hover:scale-110 duration-300
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
