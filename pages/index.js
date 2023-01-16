@@ -23,8 +23,24 @@ import GameBuddy from '../public/GameBuddy-Landing.png';
 import IdleProduction from '../public/Idle-Production-Promo-gif.gif';
 import TurbinePromo from '../public/Turbine-Promo.png';
 // import Myresume from '../public/resume.pdf';
+import { useCallback } from 'react';
+import Particles from 'react-particles';
+import { loadFull } from 'tsparticles';
 
 export default function Home() {
+
+  const particlesInit = useCallback(async engine => {
+    console.log(engine);
+    // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
+    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+    // starting from v2 you can add only the features you need reducing the bundle size
+    await loadFull(engine);
+  }, []);
+
+  const particlesLoaded = useCallback(async container => {
+      await console.log(container);
+  }, []);
+
   return (
     <div>
       <Head>
@@ -33,7 +49,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='sm:px-10 md:px-20 lg:px-40 bg-gray-900'>
+      <main className='grid main sm:px-10 md:px-20 lg:px-40 bg-gray-900'>
         <section className=''>
           <nav className='py-10 mb-12 flex justify-between'>
             <h1 className='text-xl font-burtons'> Cameron's Corner</h1>
@@ -55,7 +71,7 @@ export default function Home() {
                   to my <a className='text-blue-500' target={'_blank'} href="https://github.com/killacan"> Github</a> and <a className='text-blue-500' target={'_blank'} href="https://www.linkedin.com/in/cameron-sands-a97183169/"> linkedIn</a>.
                 </p>
               </div>
-
+              <div id='container'></div>
               <div className='text-5xl flex justify-center gap-16 py-3 text-gray-200'>
                 <a href='https://github.com/killacan' target='_blank'><AiFillGithub className='hover:scale-125 duration-300'/></a>
                 <a href='https://www.linkedin.com/in/cameron-sands-a97183169/' target='_blank'><AiFillLinkedin className='hover:scale-125 duration-300'/></a>
@@ -180,7 +196,88 @@ export default function Home() {
             <li><a className='bg-gradient-to-r from-blue-800 to-cyan-700 hover:from-cyan-700 hover:to-blue-800 text-white px-4 py-2 rounded-md ml-8' target={'_blank'} href="https://www.linkedin.com/in/cameron-sands-a97183169/">LinkedIn</a></li>
           </ul>
         </nav>
-
+        <Particles
+            id="tsparticles"
+            init={particlesInit}
+            loaded={particlesLoaded}
+            options={{
+                background: {
+                    // color: {
+                    //     value: "#0d47a1",
+                    // },
+                },
+                fullScreen: {
+                  enable: false,
+                  zIndex: -1,
+                },
+                fpsLimit: 120,
+                interactivity: {
+                    events: {
+                        onClick: {
+                            enable: true,
+                            mode: "push",
+                        },
+                        onHover: {
+                            enable: true,
+                            mode: "repulse",
+                        },
+                        resize: true,
+                    },
+                    modes: {
+                        push: {
+                            quantity: 4,
+                        },
+                        repulse: {
+                            distance: 100,
+                            duration: 0.4,
+                        },
+                    },
+                },
+                particles: {
+                    color: {
+                        value: "#ffffff",
+                    },
+                    links: {
+                        color: "#ffffff",
+                        distance: 150,
+                        enable: true,
+                        opacity: 0.5,
+                        width: 1,
+                    },
+                    collisions: {
+                        enable: false,
+                    },
+                    move: {
+                        directions: "none",
+                        enable: true,
+                        bounce: false,
+                        // outModes: {
+                        //     default: "bounce",
+                        // },
+                        random: false,
+                        speed: 1,
+                        straight: false,
+                    },
+                    number: {
+                        density: {
+                            enable: true,
+                            area: 800,
+                        },
+                        value: 80,
+                    },
+                    opacity: {
+                        value: 0.5,
+                    },
+                    shape: {
+                        type: "circle",
+                    },
+                    size: {
+                        value: { min: 1, max: 5 },
+                    },
+                },
+                detectRetina: true,
+            }}
+        />
       </main>
 
     </div>
