@@ -49,7 +49,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='grid main sm:px-10 md:px-20 lg:px-40 bg-gray-900'>
+      <main className='grid main sm:px-10 md:px-20 lg:px-40 bg-[#00043f]'>
         <section className='z-10'>
           <nav className='py-10 mb-12 flex justify-between'>
             <h1 className='text-xl font-burtons'> Cameron's Corner</h1>
