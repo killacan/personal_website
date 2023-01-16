@@ -50,7 +50,7 @@ export default function Home() {
       </Head>
 
       <main className='grid main sm:px-10 md:px-20 lg:px-40 bg-gray-900'>
-        <section className=''>
+        <section className='z-10'>
           <nav className='py-10 mb-12 flex justify-between'>
             <h1 className='text-xl font-burtons'> Cameron's Corner</h1>
             <ul className='flex items-center'>
