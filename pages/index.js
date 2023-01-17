@@ -64,7 +64,7 @@ export default function Home() {
             <div className='bg-black/30'>
               <div className='text-center p-10'>
                 <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl'> Cameron Sands</h2>
-                <h3 className='text-2xl py-2 text-gray-300 md:text-3xl'> Developer and Designer</h3>
+                <h3 className='text-2xl py-2 text-gray-300 md:text-3xl'> Software Developer</h3>
                 <p className='text-md py-5 leading-8 text-gray-300 md:text-xl max-w-xl mx-auto'>
                   I am a<span className='text-teal-500'> fullstack software developer </span>
                   and below are my latest projects. Above and below are links 
