@@ -22,6 +22,8 @@ import Image from 'next/image';
 import GameBuddy from '../public/GameBuddy-Landing.png';
 import IdleProduction from '../public/Idle-Production-Promo-gif.gif';
 import TurbinePromo from '../public/Turbine-Promo.png';
+import controllerImg from '../public/controller.png';
+import ukuleleImg from '../public/ukulele.png';
 // import Myresume from '../public/resume.pdf';
 import { useCallback } from 'react';
 import Particles from 'react-particles';
@@ -38,7 +40,7 @@ export default function Home() {
   }, []);
 
   const particlesLoaded = useCallback(async container => {
-      await console.log(container);
+      // await console.log(container);
   }, []);
 
   return (
@@ -162,8 +164,10 @@ export default function Home() {
           </div>
         </section>
         <section>
-          <div className='lg:flex lg:flex-row'>
-            <div className='py-4'>
+          <div className='2xl:flex 2xl:flex-row relative'>
+              <Image src={controllerImg} className='absolute -rotate-12 w-28 -right-10 2xl:right-0 bottom-[40px]' />
+            <div className='py-4 relative'>
+              <Image src={ukuleleImg} className='absolute rotate-45 w-28 left-[470px] top-[40px]' />
               <h2 className='text-3xl py-1 w-40 group hover:scale-110 duration-300 hover:text-teal-500'>About <span className='text-teal-500 group-hover:text-white duration-300'>me</span></h2>
               <p className='py-2 text-gray-300'>I am Cameron Sands and I am a passionate <span className='text-teal-500'> fullstack software developer</span>.</p>
               <p className='py-2 text-gray-300'>As a full stack developer, I have a strong passion for building innovative and dynamic web applications. With a solid foundation in <span className='text-teal-500'>React, Rails, JavaScript, Ruby, and Redux.</span> I am able to create responsive and interactive user interfaces that provide a seamless experience.</p>
@@ -173,9 +177,8 @@ export default function Home() {
               <p className='py-2 text-gray-300'>When I'm not working on web development projects, I enjoy pursuing a variety of hobbies. I am an avid Ukulele player and enjoy playing music as a way to relax and unwind. I also enjoy power lifting and have been working on building my strength and fitness.</p>
               <p className='py-2 text-gray-300'>I am a big fan of gaming and have been playing games for as long as I can remember. I also enjoy streaming my gameplay on platforms like Twitch, and making YouTube videos about my gaming experiences. I am always looking for new games to play and new ways to engage with the gaming community.</p>
               <p className='py-2 text-gray-300'>Overall, my hobbies and interests complement my professional skills and help me stay <span className='text-teal-500'>creative and engaged</span> in my work. I am always looking for new ways to improve my skills and grow as a developer, and I believe that my hobbies are an important part of that journey.</p>
-              <p className='py-2 text-gray-300'></p>
             </div>
-            <div className='flex flex-col justify-center lg:w-1/2'>
+            <div className='flex flex-col justify-center 2xl:w-full pb-10'>
               <h2 className='text-4xl flex justify-center pb-10 pt-4 text-teal-500'>Tech Stack</h2>
               <ul className='grid grid-cols-3 gap-10 justify-center'>
                 <li className='flex justify-center flex-col'><SiRubyonrails className='hover:scale-125 mx-auto duration-300 text-4xl text-red-700' /><p className='flex  justify-center text-gray-300'>Ruby on Rails</p></li>
