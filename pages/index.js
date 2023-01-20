@@ -143,9 +143,8 @@ export default function Home() {
               <Image src={TurbinePromo} width={360} height={400} className='mx-auto' />
               <h3 className='text-lg font-medium pt-8 pb-2'>Turbine</h3>
               <p className='py-2 text-gray-300'>
-                Turbine is a clone of steam with a working 
-                user auth system, a cart for each user, and AWS hosting of all
-                images to reduce server load. 
+                Turbine is a mock e-comerce store in the style of Steam. It has a working cart, user authentication, 
+                and game review system. 
               </p>
               <h4 className='py-4 text-teal-600'>Technologies Used</h4>
               <div className='grid grid-cols-2'>
