@@ -24,10 +24,12 @@ import IdleProduction from '../public/Idle-Production-Promo-gif.gif';
 import TurbinePromo from '../public/Turbine-Promo.png';
 import controllerImg from '../public/controller.png';
 import ukuleleImg from '../public/ukulele.png';
+import LLL_Promo from '../public/leisurellamalounge-promo.png'
 // import Myresume from '../public/resume.pdf';
 import { useCallback } from 'react';
 import Particles from 'react-particles';
 import { loadFull } from 'tsparticles';
+import ProjectBuilder from '../components/projectBuilder';
 
 export default function Home() {
 
@@ -42,6 +44,54 @@ export default function Home() {
   const particlesLoaded = useCallback(async container => {
       // await console.log(container);
   }, []);
+
+  const gboxes = [
+    {
+      title: 'Game Buddy',
+      description: 'Game Buddy is a web application that allows for people to discover new communities of gamers. Our project features a connection to the Riot API for stat verification in League of Legends. It also utilizes websocket for real time chat communications and live updates.',
+      tech: ['React', 'Express', 'MongoDB', 'Node.js', 'WebSocket'],
+      image: GameBuddy,
+      img_alt: 'Game Buddy Landing Page',
+      source_href: 'https://github.com/killacan/gameBuddy',
+      live_href: 'https://gamebuddy-app.herokuapp.com/'
+    },
+    {
+      title: 'Idle Production',
+      description: 'Idle Production is a fun idle game where you can build a massive factory. The game follows a steady progression of upgraded buildings and increasing amounts of money. The game can be played for basically ever.',
+      tech: ['JavaScript', 'Node.js', 'Canvas', 'HTML5'],
+      image: IdleProduction,
+      img_alt: 'Idle Production Promo Gif',
+      source_href: '',
+      live_href: 'https://killacan.github.io/IdleProduction/'
+    },
+    {
+      title: 'Turbine',
+      description: 'Turbine is a clone of steam with a working user auth system, a cart for each user, and AWS hosting of all images to reduce server load.',
+      tech: ['React', 'JavaScript', 'Redux', 'Ruby on Rails', 'PostgreSQL', 'Node.js'],
+      image: TurbinePromo,
+      img_alt: 'Turbine Promo Image',
+      source_href: 'https://github.com/killacan/IdleProduction',
+      live_href: 'https://steam-turbine.herokuapp.com/'
+    },
+    {
+      title: 'LlamaChop-Bot',
+      description: 'LlamaChop-Bot is a chatbot that is able to manage Twitch Chat with neural network capabilities.',
+      tech: ['Python', 'PyTorch', 'Twitch API'],
+      image: null,
+      img_alt: null,
+      source_href: 'https://github.com/killacan/python-llamachop-bot',
+      live_href: null, 
+    },
+    {
+      title: 'Leisure Llama Lounge',
+      description: 'Leisure Llama Lounge is an e-commerce site that allows for users to purchase products. It features a cart for each user, a working checkout system, and uses Printify API and Stripe API for payment processing.',
+      tech: ['React', 'TypeScript', 'Zustand', 'Next.js', 'TailwindCSS', 'Prisma'],
+      image: LLL_Promo,
+      img_alt: 'Leisure Llama Lounge Promo Image',
+      source_href: 'https://github.com/killacan/llamashop',
+      live_href: 'https://www.leisurellamalounge.com/',
+    }
+  ]
 
   return (
     <div>
@@ -96,71 +146,12 @@ export default function Home() {
             </p>
           </div>
           <div className='grid 2xl:grid-cols-3 lg:grid-cols-2 lg:gap-10'>
-            <div className='gbox'>
-              <Image src={GameBuddy} width={350} height={400} className='mx-auto' />
-              <h3 className='text-lg font-medium pt-8 pb-2 text-gray-300'>Game Buddy</h3>
-              <p className='py-2 text-gray-300'>
-                Game Buddy is a web application that allows for people
-                to discover new communities of gamers. Our project features
-                a connection to the Riot API for stat verification in League
-                of Legends. It also utilizes websocket for real time
-                chat communications and live updates.
-              </p>
-              <h4 className='py-4 text-teal-600'>Technologies Used</h4>
-              <div className='grid grid-cols-2'>
-                <p className='text-gray-300 p-1'>React</p>
-                <p className='text-gray-300 p-1'>Express</p>
-                <p className='text-gray-300 p-1'>MongoDB</p>
-                <p className='text-gray-300 p-1'>Node.js</p>
-                <p className='text-gray-300 p-1'>WebSocket</p>
-              </div>
-              <div className='flex justify-center overflow-visible'>
-                <div className='py-2'><a className='bg-blue-600 text-white px-4 py-2 rounded-md mx-4 hover:px-5 hover:py-3 hover:mx-3 duration-300' href='https://github.com/killacan/gameBuddy' target={'_blank'}>Source&nbsp;Code</a></div>
-                <div className='py-2'><a className='bg-blue-600 text-white px-4 py-2 rounded-md mx-4 hover:px-5 hover:py-3 hover:mx-3 duration-300' href='https://gamebuddy-app.herokuapp.com/' target={'_blank'}>Live&nbsp;Project</a></div>
-              </div>
-            </div>
-            <div className='gbox'>
-              <Image src={IdleProduction} width={550} height={400} className='mx-auto' />
-              <h3 className='text-gray-300 text-lg font-medium pt-8 pb-2'>Idle Production</h3>
-              <p className='py-2 text-gray-300'>
-                Idle Production is a fun idle game where you can build a massive factory. The game follows a 
-                steady progression of upgraded buildings and increasing amounts of money. The game can be played 
-                for basically ever. 
-              </p>
-              <h4 className='py-4 text-teal-600'>Technologies Used</h4>
-              <div className='grid grid-cols-2'>
-                <p className='text-gray-300 py-1'>JavaScript</p>
-                <p className='text-gray-300 py-1'>Node.js</p>
-                <p className='text-gray-300 py-1'>Canvas</p>
-                <p className='text-gray-300 py-1'>HTML5</p>
-              </div>
-              <div className='flex justify-center overflow-visible'>
-                <div className='py-2'><a className='bg-blue-600 text-white px-4 py-2 rounded-md mx-4 hover:px-5 hover:py-3 hover:mx-3 duration-300' href='https://github.com/killacan/IdleProduction' target={'_blank'}>Source&nbsp;Code</a></div>
-                <div className='py-2'><a className='bg-blue-600 text-white px-4 py-2 rounded-md mx-4 hover:px-5 hover:py-3 hover:mx-3 duration-300' href='https://killacan.github.io/IdleProduction//' target={'_blank'}>Live&nbsp;Project</a></div>
-              </div>
-            </div>
-            <div className='gbox'>
-              <Image src={TurbinePromo} width={360} height={400} className='mx-auto' />
-              <h3 className='text-lg font-medium pt-8 pb-2'>Turbine</h3>
-              <p className='py-2 text-gray-300'>
-                Turbine is a clone of steam with a working 
-                user auth system, a cart for each user, and AWS hosting of all
-                images to reduce server load. 
-              </p>
-              <h4 className='py-4 text-teal-600'>Technologies Used</h4>
-              <div className='grid grid-cols-2'>
-                <p className='text-gray-300 py-1'>React</p>
-                <p className='text-gray-300 py-1'>JavaScript</p>
-                <p className='text-gray-300 py-1'>Redux</p>
-                <p className='text-gray-300 py-1'>Ruby on Rails</p>
-                <p className='text-gray-300 py-1'>PostgreSQL</p>
-                <p className='text-gray-300 py-1'>Node.js</p>
-              </div>
-              <div className='flex justify-center overflow-visible'>
-                <div className='py-2'><a className='bg-blue-600 text-white px-4 py-2 rounded-md mx-4 hover:px-5 hover:py-3 hover:mx-3 duration-300' href='https://github.com/killacan/TurbineFullStack' target={'_blank'}>Source&nbsp;Code</a></div>
-                <div className='py-2'><a className='bg-blue-600 text-white px-4 py-2 rounded-md mx-4 hover:px-5 hover:py-3 hover:mx-3 duration-300' href='https://steam-turbine.herokuapp.com/' target={'_blank'}>Live&nbsp;Project</a></div>
-              </div>
-            </div>
+            {gboxes.map((gbox, idx) => {
+              return (
+                <ProjectBuilder key={idx} gbox={gbox} />
+              )
+            })}
+
           </div>
         </section>
         <section>
@@ -169,13 +160,13 @@ export default function Home() {
             <div className='py-4 relative'>
               <Image src={ukuleleImg} className='absolute rotate-45 w-28 left-[470px] top-[40px]' />
               <h2 className='text-3xl py-1 w-40 group hover:scale-110 duration-300 hover:text-teal-500'>About <span className='text-teal-500 group-hover:text-white duration-300'>me</span></h2>
-              <p className='py-2 text-gray-300'>I am Cameron Sands and I am a passionate <span className='text-teal-500'> fullstack software developer</span>.</p>
+              <p className='py-2 text-gray-300'>My name is Cameron Sands and I am a <span className='text-teal-500'> fullstack software developer</span>.</p>
               <p className='py-2 text-gray-300'>As a full stack developer, I have a strong passion for building innovative and dynamic web applications. With a solid foundation in <span className='text-teal-500'>React, Rails, JavaScript, Ruby, and Redux.</span> I am able to create responsive and interactive user interfaces that provide a seamless experience.</p>
               <p className='py-2 text-gray-300'>I have experience working on several projects, including: Game Buddy, an online social platform that facilitates the creation of gaming communities and communication through chat, LlamaChop-Bot, a chatbot that is able to manage Twitch Chat with neural network capabilities, Turbine, a faithful re-representation of Steam utilizing AWS for image hosting and reviews, and Idle Production, an idle game with complex resource management and responsive gameplay. </p>
-              <p className='py-2 text-gray-300'>Through my projects I have shown a track record of delivering functional projects, utilizing my skills in HTML5, CSS3, JavaScript, and Ruby on Rails. I am also a great team player and have experience working in a team environment.</p>
+              <p className='py-2 text-gray-300'>I am also a great team player and have experience working in a team environment.</p>
               <p className='py-2 text-gray-300'>I am a graduate of <span className='text-teal-500'>App Academy,</span> where I completed a Curriculum of Study in Web Development (Ruby on Rails, JavaScript, React, and Express) and I hold a Bachelor of Arts in Political Science from San Jose State University. I have a <span className='text-teal-500'>strong passion</span> for game development and participated in the Game Dev club and created a game in Unity with C#.</p>
               <p className='py-2 text-gray-300'>When I'm not working on web development projects, I enjoy pursuing a variety of hobbies. I am an avid Ukulele player and enjoy playing music as a way to relax and unwind. I also enjoy power lifting and have been working on building my strength and fitness.</p>
-              <p className='py-2 text-gray-300'>I am a big fan of gaming and have been playing games for as long as I can remember. I also enjoy streaming my gameplay on platforms like Twitch, and making YouTube videos about my gaming experiences. I am always looking for new games to play and new ways to engage with the gaming community.</p>
+              <p className='py-2 text-gray-300'>I also enjoy streaming my gameplay on platforms like Twitch, and making YouTube videos about my gaming experiences.</p>
               <p className='py-2 text-gray-300'>Overall, my hobbies and interests complement my professional skills and help me stay <span className='text-teal-500'>creative and engaged</span> in my work. I am always looking for new ways to improve my skills and grow as a developer, and I believe that my hobbies are an important part of that journey.</p>
             </div>
             <div className='flex flex-col justify-center 2xl:w-full pb-10'>
