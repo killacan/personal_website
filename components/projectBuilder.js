@@ -24,7 +24,7 @@ export default function ProjectBuilder ({gbox}) {
             </div>
             <div className='flex justify-center overflow-visible'>
             <div className='py-2'><a className='bg-blue-600 text-white px-4 py-2 rounded-md mx-4 hover:px-5 hover:py-3 hover:mx-3 duration-300' href={gbox.source_href} target={'_blank'}>Source&nbsp;Code</a></div>
-            {gbox.live_href && <div className='py-2'><a className='bg-blue-600 text-white px-4 py-2 rounded-md mx-4 hover:px-5 hover:py-3 hover:mx-3 duration-300' href='https://gamebuddy-app.herokuapp.com/' target={'_blank'}>Live&nbsp;Project</a></div>}
+            {gbox.live_href && <div className='py-2'><a className='bg-blue-600 text-white px-4 py-2 rounded-md mx-4 hover:px-5 hover:py-3 hover:mx-3 duration-300' href={`${gbox.live_href}`} target={'_blank'}>Live&nbsp;Project</a></div>}
             </div>
         </div>
     )
