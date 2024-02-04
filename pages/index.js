@@ -47,6 +47,15 @@ export default function Home() {
 
   const gboxes = [
     {
+      title: 'Leisure Llama Lounge',
+      description: 'Leisure Llama Lounge is an e-commerce site that allows for users to purchase products. It features a cart for each user, a working checkout system, and uses Printify API and Stripe API for payment processing.',
+      tech: ['React', 'TypeScript', 'Zustand', 'Next.js', 'TailwindCSS', 'Prisma'],
+      image: LLL_Promo,
+      img_alt: 'Leisure Llama Lounge Promo Image',
+      source_href: 'https://github.com/killacan/llamashop',
+      live_href: 'https://www.leisurellamalounge.com/',
+    },
+    {
       title: 'Game Buddy',
       description: 'Game Buddy is a web application that allows for people to discover new communities of gamers. Our project features a connection to the Riot API for stat verification in League of Legends. It also utilizes websocket for real time chat communications and live updates.',
       tech: ['React', 'Express', 'MongoDB', 'Node.js', 'WebSocket'],
@@ -81,15 +90,6 @@ export default function Home() {
       img_alt: null,
       source_href: 'https://github.com/killacan/python-llamachop-bot',
       live_href: null, 
-    },
-    {
-      title: 'Leisure Llama Lounge',
-      description: 'Leisure Llama Lounge is an e-commerce site that allows for users to purchase products. It features a cart for each user, a working checkout system, and uses Printify API and Stripe API for payment processing.',
-      tech: ['React', 'TypeScript', 'Zustand', 'Next.js', 'TailwindCSS', 'Prisma'],
-      image: LLL_Promo,
-      img_alt: 'Leisure Llama Lounge Promo Image',
-      source_href: 'https://github.com/killacan/llamashop',
-      live_href: 'https://www.leisurellamalounge.com/',
     }
   ]
 
