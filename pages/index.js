@@ -17,10 +17,9 @@ import {
 import {
   FaReact,
 } from "react-icons/fa";
-import Link from 'next/link';
 import Image from 'next/image';
 import GameBuddy from '../public/GameBuddy-Landing.png';
-import IdleProduction from '../public/Idle-Production-Promo-gif.gif';
+import IdleProduction from '../public/Idle-Production-Promo.png';
 import TurbinePromo from '../public/Turbine-Promo.png';
 import controllerImg from '../public/controller.png';
 import ukuleleImg from '../public/ukulele.png';
