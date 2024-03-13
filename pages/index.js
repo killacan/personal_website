@@ -61,7 +61,7 @@ export default function Home() {
       image: GameBuddy,
       img_alt: 'Game Buddy Landing Page',
       source_href: 'https://github.com/killacan/gameBuddy',
-      live_href: 'https://gamebuddy-app.herokuapp.com/'
+      live_href: null
     },
     {
       title: 'Idle Production',
@@ -69,7 +69,7 @@ export default function Home() {
       tech: ['JavaScript', 'Node.js', 'Canvas', 'HTML5'],
       image: IdleProduction,
       img_alt: 'Idle Production Promo Gif',
-      source_href: '',
+      source_href: 'https://github.com/killacan/IdleProduction',
       live_href: 'https://killacan.github.io/IdleProduction/'
     },
     {
@@ -79,7 +79,7 @@ export default function Home() {
       image: TurbinePromo,
       img_alt: 'Turbine Promo Image',
       source_href: 'https://github.com/killacan/IdleProduction',
-      live_href: 'https://steam-turbine.herokuapp.com/'
+      live_href: null
     },
     {
       title: 'LlamaChop-Bot',
